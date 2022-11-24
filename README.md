@@ -11,6 +11,6 @@ website:  https://rypab4.github.io/Work-Day-Scheduler/
 
 ## Directions
 open the website https://rypab4.github.io/Work-Day-Scheduler/
-![alt text](./assets/images/Work-Day-Scheduler_website.png)
+![alt text](./assets/images/Work-Day-Scheduler.png)
 
 Enter comments in any hour slot and press the save button.  When you leave the website the comments should still be there.
