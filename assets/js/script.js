@@ -101,7 +101,6 @@ saveBtn.on('click', function(event) {
 
     //Lines 102-237 should have a better way to write it.  Will rewrite once I learn how.
     calendarEvent.splice(index,1,newEventLog)
-    console.log(calendarEvent[0].eventEl)
     const json0 = JSON.stringify(calendarEvent[0].eventEl);
     const json1 = JSON.stringify(calendarEvent[1].eventEl);
     const json2 = JSON.stringify(calendarEvent[2].eventEl);
