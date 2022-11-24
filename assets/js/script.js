@@ -99,7 +99,7 @@ saveBtn.on('click', function(event) {
         eventEl: task 
     }
 
-    //Lines 102-237 should have a better way to write it.  Will rewrite once I learn how.
+    //Lines 102-237 should have a better way to write it.  TODO: Will rewrite once I learn how.
     calendarEvent.splice(index,1,newEventLog)
     const json0 = JSON.stringify(calendarEvent[0].eventEl);
     const json1 = JSON.stringify(calendarEvent[1].eventEl);
