@@ -234,3 +234,4 @@ $('#11').val(getEntry11)
 $('#12').val(getEntry12)
 $('#13').val(getEntry13)
 
+getCurrentDate()
