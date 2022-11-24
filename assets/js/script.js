@@ -66,27 +66,26 @@ for (let i = 0; i < timeArray.length; i++) {
     textArea.attr("id", i)
     
     
-    // why is timeArray not in normal time
+//   global eventLog
     var eventLog = {
         id: i+5,
         eventEl: description.val()
         
     }
+    //push eventLog into array 
     calendarEvent.push(eventLog)
-    // console.log(description)
+
     
 }
-// console.log(calendarEvent)
 
+// add currentDate
 var currentDate = moment().format('dddd, MMMM Do');
 function getCurrentDate() {
     $("#currentDay").text(currentDate);
     }
 
+
 var saveBtn = $('.saveBtn');
-// console.log(saveBtn)
-
-
 //on click save the text written in the box to the eventEl
 saveBtn.on('click', function(event) {
     event.preventDefault();
@@ -102,23 +101,9 @@ saveBtn.on('click', function(event) {
     
     calendarEvent.splice(index,1,newEventLog)
     localStorage.setItem('entry',calendarEvent);
-
-
-
-    //  for (let i= 0; i < calendarEvent.length; i++) {
-    //     calendarEvent[i].eventEl = $(this).siblings(`#${i}`).val()
-    // }
-
-    //need to change the current eventEl on this line when pressed save 
-    
-    // console.log(eventEl);
-    // console.log(calendarEvent);
-    // localStorage.setItem("user", JSON.stringify(user));
     const json = JSON.stringify(calendarEvent);
     localStorage.setItem('entry', json);
-    // console.log($(this).siblings('#0').val())
 
-//    console.log(calendarEvent) 
 
 })
 
